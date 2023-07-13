@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo Prático de CSS Grid - ACT 3 Sist. Multiplataformas</title>
+  <style>
+    body {
+      display: grid;
+      grid-template-rows: auto 1fr auto; /* Definición de las filas */
+      grid-template-columns: 1fr; /* Definición de las columnas */
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #6e7d75;
+      padding: 20px;
+    }
+    
+    main {
+      background-color: #becbcf;
+      padding: 20px;
+    }
+    
+    footer {
+      background-color: #826a5f;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* Media Queries */
+    @media (min-width: 768px) {
+      body {
+        grid-template-rows: auto 1fr auto; /* Filas */
+        grid-template-columns: 1fr 2fr; /* Columnas */
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      body {
+        grid-template-rows: auto 1fr auto; /* Filas */
+        grid-template-columns: 1fr 3fr; /* Columnas */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="color: black;"> <b> Ejemplo simple CSS Grid web </b></h1>
+  </header>
+  
+  <main>
+    <h2>Ejemplo Subtitulo</h2>
+    <p><i>Actividad correspondiente al modulo 2 de la materia Optativa III - Sistemas Multiplataformas</i></p>
+  </main>
+  
+  <footer>
+    <p><b>Pie de página</b></p> 
+    <p><i>(footer)</i></p>
+  </footer>
+</body>
+</html>
